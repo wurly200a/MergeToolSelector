@@ -2,8 +2,7 @@
 
 This is Merge Tool Selector Program for TortoiseGit.
 
-I'm using TortoiseGit.
-When a conflict occurs, it is necessary to perform the merge work with the merge tool.
+If a conflict occurs while using TortoiseGit, you need to merge it with the merge tool.
 For simple merging tasks (choose one or both), P4Merge is by far the easiest to use.
 On the other hand, for non-simple merging work (such as partially adopting changes), 
 I would like to use Emacs, which I usually use.
@@ -22,13 +21,12 @@ Pressing any button will launch the merge tool.
 ## P4Merge
 
 An example of starting P4Merge.
-In such a simple example, P4Merge is easy to see and merge diffs.
 
 ![mts_p4merge01.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/201153/87b6371c-e4f7-81b0-1cb3-5ffe332742b7.png)
 
 ## emacs
 
-If it's not simple, you want to edit it with your usual editor. In my case emacs.
+An example of starting emacs.
 
 ![mts_emacs01.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/201153/4cd4e78f-1f01-af78-f244-0c5ee99b505c.png)
 
@@ -41,8 +39,8 @@ If it's not simple, you want to edit it with your usual editor. In my case emacs
 
 # Improvement
 
-- I want to set the default merge tool (P4Merge in my case) to start automatically, and include a function that allows you to select and start another tool as needed.
-- I don't think it's a definite decision, so make it possible to specify the path of the merge tool in the configuration file.
+- Set the default merge tool (P4Merge in my case) to start automatically, and include a function that allows you to select and start another tool as needed.
+- Specify the path of the merge tool in the config file
 - Allow other tools to be specified
-  -TotoiseGitMerge and WinMerge
-- I want to make it more versatile by allowing the arguments to be specified arbitrarily.
+  - TotoiseGitMerge and WinMerge
+- Settings to specify arguments of merge tool
